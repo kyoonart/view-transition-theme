@@ -1,10 +1,10 @@
 {
-  "name": "vite-react-ts",
-  "version": "0.0.0",
-  "description": "React Typescript Starter Template with Vite",
+  "name": "view-transition-theme",
+  "version": "1.0.0",
+  "description": "view-transition-theme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uchihamalolan/vite-react-ts.git"
+    "url": "https://github.com/kyoonart/view-transition-theme.git"
   },
   "keywords": [
     "vite",
@@ -12,9 +12,9 @@
     "starter",
     "template"
   ],
-  "author": "Malolan B. <uchihamalolan@gmail.com> (https://twitter.com/malolan12)",
+  "author": "kyoonarts",
   "license": "MIT",
-  "homepage": "https://github.com/uchihamalolan/vite-react-ts",
+  "homepage": "https://view-transition-theme.vercel.app",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
