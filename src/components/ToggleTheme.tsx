@@ -7,9 +7,7 @@ const ToggleTheme = () => {
     const x = event.clientX;
     const y = event.clientY;
     const endRadius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
-
     let isDark: boolean;
-
     const transition = (document as any).startViewTransition(() => {
       const root = document.documentElement;
       isDark = root.classList.contains('dark');
@@ -17,7 +15,6 @@ const ToggleTheme = () => {
       root.classList.add(isDark ? 'light' : 'dark');
       setMode(mode => mode === 'light' ? 'dark' : 'light');
     });
-
     transition.ready.then(() => {
       const clipPath = [`circle(0px at ${x}px ${y}px)`, `circle(${endRadius}px at ${x}px ${y}px)`];
       document.documentElement.animate(
@@ -66,15 +63,7 @@ const ToggleTheme = () => {
       </div>
       <div className="container w-ful flex  flex-col justify-between bg-white p-4 dark:bg-blue-100">
         <div
-          className="
-              rounded-lg
-              bg-white
-              px-6
-              py-8
-              shadow-xl
-              ring-1 ring-slate-900/5
-              dark:bg-slate-800
-  "
+          className="rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800"
         >
           <div>
             <span
@@ -85,8 +74,7 @@ const ToggleTheme = () => {
                   rounded-md
                   bg-indigo-500
                   p-2
-                  shadow-lg
-      "
+                  shadow-lg"
             >
               <svg
                 className="h-6 w-6 text-white"
@@ -105,8 +93,7 @@ const ToggleTheme = () => {
                 font-medium
                 tracking-tight
                 text-slate-900
-                dark:text-white
-    "
+                dark:text-white"
           >
             Writes Upside-Down
           </h3>
@@ -115,15 +102,7 @@ const ToggleTheme = () => {
           </p>
         </div>
         <div
-          className="
-              rounded-lg
-              bg-white
-              px-6
-              py-8
-              shadow-xl
-              ring-1 ring-slate-900/5
-              dark:bg-slate-800
-  "
+          className="rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800"
         >
           <div>
             <span
@@ -134,8 +113,7 @@ const ToggleTheme = () => {
                   rounded-md
                   bg-indigo-500
                   p-2
-                  shadow-lg
-      "
+                  shadow-lg"
             >
               <svg
                 className="h-6 w-6 text-white"
@@ -154,8 +132,7 @@ const ToggleTheme = () => {
                 font-medium
                 tracking-tight
                 text-slate-900
-                dark:text-white
-    "
+                dark:text-white"
           >
             Writes Upside-Down
           </h3>
@@ -164,15 +141,7 @@ const ToggleTheme = () => {
           </p>
         </div>
         <div
-          className="
-              rounded-lg
-              bg-white
-              px-6
-              py-8
-              shadow-xl
-              ring-1 ring-slate-900/5
-              dark:bg-slate-800
-  "
+          className="rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800"
         >
           <div>
             <span
@@ -183,8 +152,7 @@ const ToggleTheme = () => {
                   rounded-md
                   bg-indigo-500
                   p-2
-                  shadow-lg
-      "
+                  shadow-lg"
             >
               <svg
                 className="h-6 w-6 text-white"
@@ -203,8 +171,7 @@ const ToggleTheme = () => {
                 font-medium
                 tracking-tight
                 text-slate-900
-                dark:text-white
-    "
+                dark:text-white"
           >
             Writes Upside-Down
           </h3>
